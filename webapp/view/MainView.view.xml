@@ -11,7 +11,7 @@
 
                         <SearchField liveChange=".onSearch" width="100%" />
                         <List 
-                            noDataText="Drop list items here" 
+                            noDataText="List items" 
                             id="list0"
                             items="{productsModel>/}"> 
                     	    <items>

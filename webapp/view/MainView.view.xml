@@ -1,0 +1,31 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ns.UI5Module.controller.MainView" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>                                   
+                    	<Button 
+                            text="Show Hello" 
+                            id="button1"
+                            press="onPress"/>
+
+                        <SearchField liveChange=".onSearch" width="100%" />
+                        <List 
+                            noDataText="Drop list items here" 
+                            id="list0"
+                            items="{productsModel>/}"> 
+                    	    <items>
+                    	        <StandardListItem 
+                                    type="Navigation" 
+                                    title="{productsModel>ProductId}" 
+                                    description="{productsModel>ShortDescription}" 
+                                    icon="sap-icon://picture"/>                
+                    	    </items>              
+                    	</List>
+
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

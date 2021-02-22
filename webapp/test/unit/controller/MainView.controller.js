@@ -13,7 +13,6 @@ sap.ui.define([
 		assert.ok(oAppController);
     });
     */
-    
 
     QUnit.test('Test somethings !', function (assert) {
         var oAppController = new Controller();

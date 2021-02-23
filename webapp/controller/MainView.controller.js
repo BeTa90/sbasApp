@@ -43,6 +43,7 @@ sap.ui.define([
                 // update list binding
                 var oList = this.byId("list0");
                 var oBinding = oList.getBinding("items");
+                // @ts-ignore
                 oBinding.filter(aFilters, "Application");
             }
 

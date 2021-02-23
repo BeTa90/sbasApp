@@ -5,6 +5,7 @@ sap.ui.define([
 ], function (Controller) {
 	"use strict";
 
+	// @ts-ignore
 	QUnit.module("MainView Controller");
     /*
     QUnit.test("I should test the MainView controller", function (assert) {
@@ -14,6 +15,7 @@ sap.ui.define([
     });
     */
 
+    // @ts-ignore
     QUnit.test('Test somethings !', function (assert) {
         var oAppController = new Controller();
         assert.equal(oAppController.calculate(1,1,"+"), 2); 

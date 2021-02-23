@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build": "npm run clean && ui5 build --include-task=generateManifestBundle generateCachebusterInfo && npm run zip",
+    "test": "npm test",
     "zip": "cd dist && npx bestzip ../UI5Module-content.zip *",
     "clean": "npx rimraf UI5Module-content.zip dist"
   },
